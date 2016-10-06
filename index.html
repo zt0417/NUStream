@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<style>
+	body {
+		overflow-x:hidden;
+	}
+	.topPart {
+		height: 80px;
+		width: 100%;
+
+	}
+
+	.middlePart {
+		position: relative;
+		padding:0px;
+		margin: 0px !important;
+		width:100%;
+		height: 480px;
+		background-image: url("img/cool-background.jpg");
+		background-size: contain;
+	}
+
+
+	.NUS_login {
+		position: relative;
+		margin-top: 50px;
+		width: 300px;
+		height: 300px;
+		padding:30px;
+		margin-right: 40px;
+		float:right;
+		background-color: white;
+	}
+
+	.NUS_authTitle {
+		text-align: center;
+	}
+
+	.FPassword {
+		font-size:80%;
+		position: relative;
+	}
+	.contact {
+		padding-top: 50px;
+		text-align: right;
+		letter-spacing: 1px;
+	}
+	.userNameColor {
+		border-color:green !important;
+	}
+	.passWordColor {
+		border-color: yellow !important;
+	}
+	.inner-addon { 
+    position: relative; 
+	}
+
+	/* style icon */
+	.inner-addon .glyphicon {
+	  position: absolute;
+	  padding: 10px;
+	  pointer-events: none;
+	}
+
+	/* align icon */
+	.left-addon .glyphicon  { left:  0px;}
+
+	/* add padding  */
+	.left-addon input  { padding-left:  30px; }
+
+	.copyright {
+		text-align: center;
+		vertical-align: middle;
+	}
+</style>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+		<div class="topPart row">
+			<div class="contact">
+				<h4>Sales:<strong>416-333-1111</strong> | Office:<strong>647-795-1188</strong></h4>
+			</div>
+		</div>
+		<div class="middlePart row">
+			
+			<div class="NUS_login">
+				<h4 class="NUS_authTitle">Account Login</h4>
+				<form>
+					<div style="margin-bottom: 25px" class="inner-addon left-addon">
+						<i class="glyphicon glyphicon-user"></i>
+						<input id="login-username" type="text" class="form-control userNameColor" name="username" value="" placeholder="Username" required>
+					</div>
+					<div style="margin-bottom: 25px" class="inner-addon left-addon">
+                        <i class="glyphicon glyphicon-lock"></i>
+						<input id="login-password" type="text" class="form-control passWordColor" name="password" value="" placeholder="Password" required>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input id="login-remember" type="checkbox"value="1">Remeber me
+						</label>
+					</div>
+				</form>
+				<button class="btn btn-primary btn-block">Submit</button>
+				<div class="FPassword"><a href="#">Forgot password?</a></div>
+			</div>
+			
+		</div>
+		<div class="bottomPart row">
+			<p class="copyright">@copyright</p>
+		</div>
+	
+</body>
